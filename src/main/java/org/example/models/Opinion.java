@@ -23,7 +23,7 @@ public class Opinion {
     @Column(name = "puntuacion")
     private Integer puntuacion;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "pelicula_id")
     private Pelicula pelicula;
 

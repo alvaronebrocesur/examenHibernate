@@ -15,8 +15,10 @@ public class Main {
         System.out.println();
          */
 
-        /* Ej 2
-        DataService.getOpinionByUser("user1@example.com");
+        /* Ej 4
+        for (Opinion o :DataService.getOpinionByUser("user1@example.com")){
+            System.out.println(o);
+        }
          */
 
         /* Ej 3
@@ -32,7 +34,10 @@ public class Main {
          */
 
         /* Ej 4
-        DataService.getPeliculasBajaPuntuacion();
+        for (String s: DataService.getPeliculasBajaPuntuacion()){
+            System.out.println(s);
+        }
          */
+
     }
 }
